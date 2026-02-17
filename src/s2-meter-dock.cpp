@@ -159,7 +159,7 @@ void S2MeterWidget::AttachToSource(const char *name) {
     source = obs_get_source_by_name(name);
     if (source) {
         volmeter = obs_volmeter_create(OBS_FADER_LOG);
-        obs_volmeter_set_update_interval(volmeter, 50); // Fast update
+        // obs_volmeter_set_update_interval(volmeter, 50); // Fast update
         obs_volmeter_add_callback(volmeter, VolmeterCallbackWrapper, this);
         if (!obs_volmeter_attach_source(volmeter, source)) {
              // Failed to attach
