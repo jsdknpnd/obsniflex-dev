@@ -35,10 +35,10 @@ if(ENABLE_QT)
 endif()
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    plugin-main.c
-    plugin-support.h
-    s2-meter-dock.cpp
-    s2-meter-dock.hpp
+    src/plugin-main.c
+    src/plugin-support.h
+    src/s2-meter-dock.cpp
+    src/s2-meter-dock.hpp
 )
 
 set_target_properties_plugin(${CMAKE_PROJECT_NAME} PROPERTIES OUTPUT_NAME ${_name})
